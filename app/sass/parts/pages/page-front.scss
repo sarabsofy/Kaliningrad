@@ -2,32 +2,33 @@
 
 #main {
   background: url("../images/image 1.png") 60% 0 no-repeat;
+  background-size: 80%;
 }
 
 #section-hello {
   position: relative;
   padding-top: 6rem;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 2rem;
+  line-height: 2.5rem;
 
   .title {
     padding-right: 20rem;
 
     p{
-      margin-top: 2rem;
+      margin-top: 3.75rem;
     }
   }
 
   .desc {
     width: max-content;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
 
     .button {
       position: relative;
       width: 100%;
       text-transform: lowercase;
-      margin-top: 5rem;
-      border-bottom: 2px solid $black;
+      margin-top: 7rem;
+      border-bottom: 3px solid $black;
       padding: 5px 0;
 
       .arrow{
@@ -45,7 +46,100 @@
 
   .hello-image {
     position: absolute;
-    bottom: -65px;
-    right: -20px;
+    bottom: -4rem;
+    right: -1rem;
+    width: 50%;
+  }
+}
+
+#section-route{
+  padding-top:2rem;
+  font-size:2rem;
+  line-height:2.5rem;
+
+  .section-title{
+    padding-bottom: 1.25rem;
+  }
+
+  .desc{
+    padding-bottom:4.5rem;
+  }
+
+  .item{
+    padding: 0.6rem;
+    border-top: 1px solid #DFDFDF;
+    min-height:5.2rem;
+    .title{
+      padding-right:2rem;
+    }
+    .item-desc{
+      font-size:1rem;
+      line-height:1.25rem;
+  
+      p{
+        padding-right: 3.75rem;
+      }
+
+      ul{
+        list-style: disc;
+      }
+    }
+    .item-image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      display: block;
+      height:100%;
+      object-fit: cover;
+    }
+  }
+}
+
+#section-projects{
+  padding:3.5rem 0 7rem 0;
+  border-bottom:1px solid $black;
+
+  &::before,
+  &::after{
+    content:"";
+    position: absolute;
+    top:100%;
+    height:1px;
+    background-color: $black;
+  }
+
+  &::before{
+    right:100%;
+    width:21.5rem;
+  }
+
+  &::after{
+    width:1rem;
+    left:100%;
+  }
+
+  .list{
+    grid-gap: 0.63rem;
+    padding-top:2.5rem;
+
+    .item{
+      .item-image{
+        margin-bottom:0.5rem;
+
+        img{
+          width:100%;
+        }
+      }
+
+      a{
+        display:block;
+        color:#555555;
+      }
+  
+      p{
+        padding-top:0.5rem;
+      }
+    }
   }
 }

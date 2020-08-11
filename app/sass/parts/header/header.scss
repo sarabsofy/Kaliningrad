@@ -6,8 +6,8 @@
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 
   a {
 	  color: $black;
@@ -44,7 +44,8 @@
 
   .logo{
 	  position: absolute;
-	  right:-20px;
-	  top:0;
+	  right:-1rem;
+    top:0;
+    width:20%;
   }
 }

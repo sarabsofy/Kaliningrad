@@ -55,15 +55,16 @@ h2 {
 .section-title {
     &.type-1 {
         & > * {
-			font-size: 4rem;
-			line-height: 4rem;
+			font-size: 5.38rem;
+			line-height: 5rem;
 			font-family: 'Times New Roman', Times, serif;
         }
     }
     &.type-2 {
         & > * {
 			font-family: 'Times New Roman', Times, serif;
-			font-size: 2.5rem;
+			font-size: 3.75rem;
+			line-height:3.75rem;
         }
     }
 }
