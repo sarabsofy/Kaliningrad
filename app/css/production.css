@@ -707,12 +707,15 @@ input, textarea {
 .wrapper {
   padding: 0 1rem; }
 
-.text-block p {
-  line-height: 1.5;
-  margin-bottom: 1rem; }
+.text-block p, .text-block a {
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif; }
 
-.text-block ul li:not(:last-child) {
-  margin-bottom: 1rem; }
+.text-block ul li {
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .text-center {
   text-align: center; }
@@ -735,6 +738,11 @@ a {
   font-family: 'Times New Roman', Times, serif;
   font-size: 3.75rem;
   line-height: 3.75rem; }
+
+.item-title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .black-block {
   color: #fafafa;
@@ -794,13 +802,11 @@ a {
     min-height: 5.2rem; }
     #section-route .item .title {
       padding-right: 2rem; }
-    #section-route .item .item-desc {
-      font-size: 1rem;
-      line-height: 1.25rem; }
-      #section-route .item .item-desc p {
-        padding-right: 3.75rem; }
-      #section-route .item .item-desc ul {
-        list-style: disc; }
+    #section-route .item .item-desc p {
+      padding-right: 3.75rem;
+      padding-bottom: 2rem; }
+    #section-route .item .item-desc ul {
+      list-style: disc; }
     #section-route .item .item-image {
       position: absolute;
       top: 0;
@@ -838,6 +844,61 @@ a {
       color: #555555; }
     #section-projects .list .item p {
       padding-top: 0.5rem; }
+
+#about-us {
+  padding-top: 2rem; }
+  #about-us .section-title {
+    padding-bottom: 4.5rem; }
+  #about-us .about-list .item {
+    padding: 0.4rem 0.5rem 2rem 0.4rem;
+    border-top: 1px solid #DFDFDF;
+    height: auto; }
+    #about-us .about-list .item .item-title {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      text-transform: lowercase; }
+    #about-us .about-list .item .item-desc {
+      padding-top: 0.33rem; }
+    #about-us .about-list .item .item-button {
+      position: relative;
+      background-color: transparent;
+      padding-top: 1rem;
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      outline: none; }
+      #about-us .about-list .item .item-button::before, #about-us .about-list .item .item-button::after {
+        content: "";
+        position: absolute;
+        background-color: #111;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      #about-us .about-list .item .item-button::before {
+        width: 1rem;
+        height: 2px; }
+      #about-us .about-list .item .item-button::after {
+        width: 2px;
+        height: 1rem;
+        transition: 0.2s ease-out; }
+      #about-us .about-list .item .item-button--active::after {
+        transform: translate(-50%, -50%) rotate(90deg); }
+  #about-us .about-desc {
+    padding: 0.5rem 4rem 5rem 6.3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif; }
+  #about-us .about-contacts {
+    padding-top: 13rem; }
+    #about-us .about-contacts .contacts {
+      padding: 1.5rem 4rem 5rem 6.3rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-family: Arial, Helvetica, sans-serif; }
+      #about-us .about-contacts .contacts a {
+        display: block;
+        color: #111;
+        margin-bottom: 1rem; }
 
 @media screen and (min-width: 1280px) and (max-width: 1650) {
   .col-md-1 {
