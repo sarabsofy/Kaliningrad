@@ -1,0 +1,146 @@
+@import '../parts/_vars';
+
+// text
+
+// global flex blocks properties
+
+.dis-flex {
+    display: flex;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-base {
+    align-items: baseline;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-between {
+    align-content:  space-between;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+// global display grid blocks properties
+
+.dis-grid {
+    display: grid;
+}
+
+@for $i from 1 through 50 {
+    // .grid-gap-#{$i} {
+    //     grid-gap: #{$i}px;
+    // }
+}
+
+.grid-col-lg-1 {
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.grid-col-lg-2 {
+    grid-template-columns: repeat(2, 2fr)
+}
+
+.grid-col-lg-3 {
+    grid-template-columns: repeat(3, 3fr)
+}
+
+.grid-col-lg-4 {
+    grid-template-columns: repeat(4, 4fr)
+}
+
+.grid-col-lg-5 {
+    grid-template-columns: repeat(5, 5fr)
+}
+
+.grid-col-lg-6 {
+    grid-template-columns: repeat(6, 6fr)
+}
+
+// margins
+
+@for $i from 5 through 50 {
+    .padding-t-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .margin-t-#{$i} {
+        margin-top: #{$i}px; 
+    }
+    .margin-b-#{$i} {
+        margin-bottom: #{$i}px; 
+    }
+}
+
+// positions
+
+.relative {
+    position: relative;
+}
+.z1 {
+    z-index: 1;
+}
+
+// height and width
+
+.full-height {
+    height: 100%;
+    min-height: 100%;
+}
+
+.full-width {
+    width: 100%;
+    min-width: 100%;
+}
+
+// text politics
+
+h1,h2,h3 {
+    font-weight: normal;
+}

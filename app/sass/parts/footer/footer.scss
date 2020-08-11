@@ -1,0 +1,14 @@
+@import '../_vars';
+
+#footer {
+	position: fixed;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	a {
+		text-transform: uppercase;
+		color: $black;
+	}
+}

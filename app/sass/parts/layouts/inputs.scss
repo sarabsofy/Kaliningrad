@@ -1,0 +1,14 @@
+@import'../vars';
+
+// text and fields politics and buttons
+
+input,textarea {
+	padding: .6rem .8rem;
+	width: 100%;
+	font-size: 1rem;
+}
+[type="submit"]{
+	-webkit-appearance: none !important;
+	   -moz-appearance: none !important;
+	        appearance: none !important;
+}

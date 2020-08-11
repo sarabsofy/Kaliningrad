@@ -1,0 +1,50 @@
+@import '../_vars';
+
+.header {
+  position: relative;
+  padding-top: 1rem;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  a {
+	  color: $black;
+  }
+
+  .contacts {
+    padding-left: 1rem;
+    ul {
+		  li {
+        border-bottom: 2px solid $black;
+        &:first-child {
+          position:relative;
+
+          &::before{
+            position: absolute;
+            content:"";
+            width: 0.4rem;
+            height: 0.4rem;
+            top: 0;
+            right:2px;
+            border: 2px solid $black;
+            transform: rotate(45deg);
+            border-left-color:transparent;
+            border-top-color:transparent;
+          }
+        }
+		  }
+	  }
+  }
+
+  .socials{
+    margin-left: 7rem;
+  }
+
+  .logo{
+	  position: absolute;
+	  right:-20px;
+	  top:0;
+  }
+}

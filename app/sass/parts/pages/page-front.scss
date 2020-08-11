@@ -1,0 +1,51 @@
+@import '../_vars';
+
+#main {
+  background: url("../images/image 1.png") 60% 0 no-repeat;
+}
+
+#section-hello {
+  position: relative;
+  padding-top: 6rem;
+  font-size: 32px;
+  line-height: 40px;
+
+  .title {
+    padding-right: 20rem;
+
+    p{
+      margin-top: 2rem;
+    }
+  }
+
+  .desc {
+    width: max-content;
+    padding-bottom: 4rem;
+
+    .button {
+      position: relative;
+      width: 100%;
+      text-transform: lowercase;
+      margin-top: 5rem;
+      border-bottom: 2px solid $black;
+      padding: 5px 0;
+
+      .arrow{
+        position: absolute;
+        top: 0.75rem;
+        right: 0;
+      }
+    }
+
+    p {
+      color: #A5A5A5;
+      padding: 1rem 0;
+    }
+  }
+
+  .hello-image {
+    position: absolute;
+    bottom: -65px;
+    right: -20px;
+  }
+}
