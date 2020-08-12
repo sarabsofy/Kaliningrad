@@ -248,11 +248,8 @@
       border-bottom: 1px solid $black;
       padding: 0.5rem 0;
 
-      button{
+      .teacher{
         position:relative;
-        outline: none;
-        border:none;
-        background-color: transparent;
         color: #0000FF;
         font: inherit;
 
@@ -269,13 +266,14 @@
             border-bottom: 1px solid $black;
           }
         }
-      }
 
-      .button-active{
-        color: #949494;
+        &:hover,
+        &:focus{
+          color: #797171;
 
-        .social-list{
-          display: flex;
+          .social-list{
+            display: flex;
+          }
         }
       }
 
@@ -302,6 +300,63 @@
 
     .description{
       padding-top:3.5rem;
+    }
+  }
+
+  .poster-wrapper{
+    padding-right: 9rem;
+  }
+}
+
+#questions{
+  padding: 5rem 0 18.5rem 0;
+
+  .questions-list{
+    .item{
+      border-bottom: 1px solid $black;
+      padding: 3rem 1rem 0.5rem 0;
+
+      .item-desc{
+        .description{
+          padding-top: 2rem;
+        }
+      }
+
+      .item-button{
+        position:relative;
+        background-color: transparent;
+        padding-top:1rem;
+        width: 2rem;
+        height: 2rem;
+        border:none;
+        outline: none;
+        cursor:pointer;
+
+        &::before,
+        &::after{
+          content:"";
+          position: absolute;
+          background-color: $black;
+          top: 50%;
+          left:50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &::before{
+          width: 1.6rem;
+          height: 1px;
+        }
+
+        &::after{
+          width: 1px;
+          height: 1.6rem;
+          transition: 0.2s ease-out;
+        }
+
+        &--active::after{
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
     }
   }
 }

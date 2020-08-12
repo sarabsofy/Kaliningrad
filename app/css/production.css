@@ -589,6 +589,52 @@ h1, h2, h3 {
     text-transform: uppercase;
     color: #111; }
 
+.header {
+  position: relative;
+  padding-top: 1rem;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  .header a {
+    color: #111; }
+  .header .contacts {
+    padding-left: 1rem; }
+    .header .contacts ul li {
+      border-bottom: 2px solid #111; }
+      .header .contacts ul li:first-child {
+        position: relative; }
+        .header .contacts ul li:first-child::before {
+          position: absolute;
+          content: "";
+          width: 0.4rem;
+          height: 0.4rem;
+          top: 0;
+          right: 2px;
+          border: 2px solid #111;
+          transform: rotate(45deg);
+          border-left-color: transparent;
+          border-top-color: transparent; }
+  .header .socials {
+    margin-left: 7rem; }
+  .header .logo {
+    position: absolute;
+    right: -1rem;
+    top: 0;
+    width: 20%; }
+
+#nav {
+  padding-top: 1rem; }
+  #nav ul li a {
+    display: block;
+    text-transform: lowercase;
+    font-size: 1.75rem;
+    line-height: 1.8rem;
+    color: #999999;
+    padding-right: 4rem;
+    padding-bottom: 1rem; }
+
 * {
   border: 0;
   outline: 0;
@@ -718,52 +764,6 @@ a {
   border-color: #fafafa; }
   .black-block a, .black-block p {
     color: #fafafa; }
-
-.header {
-  position: relative;
-  padding-top: 1rem;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.25rem; }
-  .header a {
-    color: #111; }
-  .header .contacts {
-    padding-left: 1rem; }
-    .header .contacts ul li {
-      border-bottom: 2px solid #111; }
-      .header .contacts ul li:first-child {
-        position: relative; }
-        .header .contacts ul li:first-child::before {
-          position: absolute;
-          content: "";
-          width: 0.4rem;
-          height: 0.4rem;
-          top: 0;
-          right: 2px;
-          border: 2px solid #111;
-          transform: rotate(45deg);
-          border-left-color: transparent;
-          border-top-color: transparent; }
-  .header .socials {
-    margin-left: 7rem; }
-  .header .logo {
-    position: absolute;
-    right: -1rem;
-    top: 0;
-    width: 20%; }
-
-#nav {
-  padding-top: 1rem; }
-  #nav ul li a {
-    display: block;
-    text-transform: lowercase;
-    font-size: 1.75rem;
-    line-height: 1.8rem;
-    color: #999999;
-    padding-right: 4rem;
-    padding-bottom: 1rem; }
 
 #main {
   background: url("../images/image 1.png") 60% 0 no-repeat;
@@ -929,27 +929,24 @@ a {
     #teachers .teachers-list .item {
       border-bottom: 1px solid #111;
       padding: 0.5rem 0; }
-      #teachers .teachers-list .item button {
+      #teachers .teachers-list .item .teacher {
         position: relative;
-        outline: none;
-        border: none;
-        background-color: transparent;
         color: #0000FF;
         font: inherit; }
-        #teachers .teachers-list .item button .social-list {
+        #teachers .teachers-list .item .teacher .social-list {
           position: absolute;
           display: none;
           top: 0;
           left: calc(100% + 1rem); }
-          #teachers .teachers-list .item button .social-list a {
+          #teachers .teachers-list .item .teacher .social-list a {
             display: block;
             margin-right: 1rem;
             color: #111;
             border-bottom: 1px solid #111; }
-      #teachers .teachers-list .item .button-active {
-        color: #949494; }
-        #teachers .teachers-list .item .button-active .social-list {
-          display: flex; }
+        #teachers .teachers-list .item .teacher:hover, #teachers .teachers-list .item .teacher:focus {
+          color: #797171; }
+          #teachers .teachers-list .item .teacher:hover .social-list, #teachers .teachers-list .item .teacher:focus .social-list {
+            display: flex; }
       #teachers .teachers-list .item .item-title {
         text-align: right; }
         #teachers .teachers-list .item .item-title.button-active {
@@ -963,6 +960,41 @@ a {
     padding-top: 3rem; }
     #fest .fest-desc .description {
       padding-top: 3.5rem; }
+  #fest .poster-wrapper {
+    padding-right: 9rem; }
+
+#questions {
+  padding: 5rem 0 18.5rem 0; }
+  #questions .questions-list .item {
+    border-bottom: 1px solid #111;
+    padding: 3rem 1rem 0.5rem 0; }
+    #questions .questions-list .item .item-desc .description {
+      padding-top: 2rem; }
+    #questions .questions-list .item .item-button {
+      position: relative;
+      background-color: transparent;
+      padding-top: 1rem;
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      outline: none;
+      cursor: pointer; }
+      #questions .questions-list .item .item-button::before, #questions .questions-list .item .item-button::after {
+        content: "";
+        position: absolute;
+        background-color: #111;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      #questions .questions-list .item .item-button::before {
+        width: 1.6rem;
+        height: 1px; }
+      #questions .questions-list .item .item-button::after {
+        width: 1px;
+        height: 1.6rem;
+        transition: 0.2s ease-out; }
+      #questions .questions-list .item .item-button--active::after {
+        transform: translate(-50%, -50%) rotate(90deg); }
 
 @media screen and (min-width: 1280px) and (max-width: 1650) {
   .col-md-1 {
