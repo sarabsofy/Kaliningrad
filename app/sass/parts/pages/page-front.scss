@@ -97,26 +97,6 @@
 
 #section-projects{
   padding:3.5rem 0 7rem 0;
-  border-bottom:1px solid $black;
-
-  &::before,
-  &::after{
-    content:"";
-    position: absolute;
-    top:100%;
-    height:1px;
-    background-color: $black;
-  }
-
-  &::before{
-    right:100%;
-    width:21.5rem;
-  }
-
-  &::after{
-    width:1rem;
-    left:100%;
-  }
 
   .list{
     grid-gap: 0.63rem;
@@ -147,7 +127,7 @@
   padding-top:2rem;
 
   .section-title{
-    padding-bottom:4.5rem;
+    padding-bottom:6rem;
   }
 
   .about-list{
@@ -224,6 +204,104 @@
         color: $black;
         margin-bottom: 1rem;
       }
+    }
+  }
+
+  .form{
+    position: relative;
+    padding-bottom: 10rem;
+    .image-wrapper{
+      width: calc(100% + 20.5rem);
+      transform: translateX(-20.5rem);
+
+      img{
+        object-fit: cover;
+      }
+    }
+
+    a{
+      color: $white;
+      position: absolute;
+      top: 20.5rem;
+      left: 5rem;
+    }
+  }
+}
+
+#teachers{
+  padding-bottom: 7.6rem;
+
+  .teachers-desc{
+    padding-right: 4rem;
+    .description{
+      padding: 4rem 0 5rem 0;
+    }
+
+    .quote{
+      color: #949494;
+    }
+  }
+
+  .teachers-list{
+    padding-right: 7.3rem;
+    .item{
+      border-bottom: 1px solid $black;
+      padding: 0.5rem 0;
+
+      button{
+        position:relative;
+        outline: none;
+        border:none;
+        background-color: transparent;
+        color: #0000FF;
+        font: inherit;
+
+        .social-list{
+          position: absolute;
+          display: none;
+          top: 0;
+          left: calc(100% + 1rem);
+
+          a{
+            display: block;
+            margin-right: 1rem;
+            color: $black;
+            border-bottom: 1px solid $black;
+          }
+        }
+      }
+
+      .button-active{
+        color: #949494;
+
+        .social-list{
+          display: flex;
+        }
+      }
+
+      .item-title{
+        text-align: right;
+
+        &.button-active{
+          opacity: 0;
+        }
+      }
+    }
+
+    .item:not(:first-child){
+      min-height: 10rem;
+    }
+  }
+}
+
+#fest{
+  padding: 5rem 0 10.25rem 0;
+
+  .fest-desc{
+    padding-top: 3rem;
+
+    .description{
+      padding-top:3.5rem;
     }
   }
 }

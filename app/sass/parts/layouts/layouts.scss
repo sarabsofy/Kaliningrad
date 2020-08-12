@@ -9,3 +9,26 @@
 .wrapper {
 	padding: 0 1rem;
 }
+
+.section-border{
+	border-bottom:1px solid $black;
+
+  &::before,
+  &::after{
+    content:"";
+    position: absolute;
+    top:100%;
+    height:1px;
+    background-color: $black;
+  }
+
+  &::before{
+    right:100%;
+    width:21.5rem;
+  }
+
+  &::after{
+    width:1rem;
+    left:100%;
+  }
+}
