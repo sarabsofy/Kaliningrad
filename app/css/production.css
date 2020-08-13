@@ -579,15 +579,28 @@ h1, h2, h3 {
   width: 100vw; }
 
 #footer {
-  position: fixed;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  width: 100%;
-  left: 0;
-  bottom: 0; }
-  #footer a {
-    text-transform: uppercase;
-    color: #111; }
+  padding: 3.2rem 8rem 2rem 0;
+  background: url("../images/DSC08484.png") 100% 70% no-repeat;
+  background-size: 107%; }
+  #footer .contacts {
+    padding-top: 8.25rem; }
+    #footer .contacts .button {
+      position: relative;
+      width: 100%;
+      text-transform: lowercase;
+      border-bottom: 3px solid #111;
+      padding: 5px 0; }
+      #footer .contacts .button .arrow {
+        position: absolute;
+        top: 0.75rem;
+        right: 0; }
+    #footer .contacts .contacts-list .item {
+      padding-bottom: 1.25rem; }
+    #footer .contacts .contacts-list a {
+      color: #111; }
+  #footer .partners {
+    padding-top: 3.25rem;
+    transform: translateX(-21.5rem); }
 
 .header {
   position: relative;
@@ -701,7 +714,7 @@ input, textarea {
 
 .button {
   color: #111;
-  background-color: #fafafa;
+  background-color: transparent;
   display: inline-block; }
 
 .wrapper {
@@ -929,27 +942,28 @@ a {
     #teachers .teachers-list .item {
       border-bottom: 1px solid #111;
       padding: 0.5rem 0; }
-      #teachers .teachers-list .item .teacher {
-        position: relative;
+      #teachers .teachers-list .item button {
+        outline: none;
+        border: none;
+        background-color: transparent;
         color: #0000FF;
         font: inherit; }
-        #teachers .teachers-list .item .teacher .social-list {
-          position: absolute;
+        #teachers .teachers-list .item button .social-list {
           display: none;
-          top: 0;
-          left: calc(100% + 1rem); }
-          #teachers .teachers-list .item .teacher .social-list a {
+          margin-left: 1rem; }
+          #teachers .teachers-list .item button .social-list a {
             display: block;
             margin-right: 1rem;
             color: #111;
             border-bottom: 1px solid #111; }
-        #teachers .teachers-list .item .teacher:hover, #teachers .teachers-list .item .teacher:focus {
-          color: #797171; }
-          #teachers .teachers-list .item .teacher:hover .social-list, #teachers .teachers-list .item .teacher:focus .social-list {
+        #teachers .teachers-list .item button:hover, #teachers .teachers-list .item button:focus {
+          color: #949494;
+          white-space: nowrap; }
+          #teachers .teachers-list .item button:hover .social-list, #teachers .teachers-list .item button:focus .social-list {
             display: flex; }
       #teachers .teachers-list .item .item-title {
         text-align: right; }
-        #teachers .teachers-list .item .item-title.button-active {
+        #teachers .teachers-list .item .item-title.button-hover {
           opacity: 0; }
     #teachers .teachers-list .item:not(:first-child) {
       min-height: 10rem; }

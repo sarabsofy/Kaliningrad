@@ -248,16 +248,16 @@
       border-bottom: 1px solid $black;
       padding: 0.5rem 0;
 
-      .teacher{
-        position:relative;
+      button{
+        outline: none;
+        border:none;
+        background-color: transparent;
         color: #0000FF;
         font: inherit;
 
         .social-list{
-          position: absolute;
           display: none;
-          top: 0;
-          left: calc(100% + 1rem);
+          margin-left: 1rem;
 
           a{
             display: block;
@@ -268,9 +268,10 @@
         }
 
         &:hover,
-        &:focus{
-          color: #797171;
-
+        &:focus {
+          color: #949494;
+          white-space:nowrap;
+          
           .social-list{
             display: flex;
           }
@@ -280,7 +281,7 @@
       .item-title{
         text-align: right;
 
-        &.button-active{
+        &.button-hover{
           opacity: 0;
         }
       }

@@ -1,14 +1,39 @@
 @import '../_vars';
 
 #footer {
-	position: fixed;
-	padding-top: .75rem;
-	padding-bottom: .75rem;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	a {
-		text-transform: uppercase;
-		color: $black;
-	}
+    padding: 3.2rem 8rem 2rem 0;
+    background: url("../images/DSC08484.png") 100% 70% no-repeat;
+    background-size: 107%;
+
+	.contacts{
+        padding-top: 8.25rem;
+        .button {
+            position: relative;
+            width: 100%;
+            text-transform: lowercase;
+            border-bottom: 3px solid $black;
+            padding: 5px 0;
+      
+            .arrow{
+              position: absolute;
+              top: 0.75rem;
+              right: 0;
+            }
+          }
+
+          .contacts-list{
+            .item{
+                padding-bottom: 1.25rem;
+            }
+
+            a {
+                color: $black;
+              }
+          }
+    }
+
+    .partners{
+        padding-top: 3.25rem;
+        transform: translateX( -21.5rem);
+    }
 }
