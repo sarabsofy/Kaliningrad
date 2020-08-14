@@ -1232,7 +1232,10 @@ li.fancybox-thumbs-loading {
       #footer .contacts .button .arrow {
         position: absolute;
         top: 0.75rem;
-        right: 0; }
+        right: 1rem;
+        transition: 0.2s ease-out; }
+      #footer .contacts .button:hover .arrow, #footer .contacts .button:focus .arrow {
+        transform: translateX(0.8rem); }
     #footer .contacts .contacts-list .item {
       padding-bottom: 1.25rem; }
     #footer .contacts .contacts-list a {
@@ -1472,7 +1475,10 @@ a {
       #section-hello .desc .button .arrow {
         position: absolute;
         top: 0.75rem;
-        right: 1rem; }
+        right: 1rem;
+        transition: 0.2s ease-out; }
+      #section-hello .desc .button:hover .arrow, #section-hello .desc .button:focus .arrow {
+        transform: translateX(0.8rem); }
     #section-hello .desc p {
       color: #A5A5A5;
       padding: 1rem 0; }
@@ -1536,11 +1542,13 @@ a {
   #section-projects .section-projects-arrows .slick-arrow {
     font-size: 0.00001rem;
     color: transparent;
-    width: 2rem;
-    height: 2rem;
-    background: url("../images/Arrow 4.png") 0 50%;
+    width: 6rem;
+    height: 5rem;
+    background: url("../images/Arrow 4.png");
+    background-position: center;
     background-repeat: no-repeat;
-    margin: 2rem; }
+    padding: 2rem;
+    cursor: pointer; }
     #section-projects .section-projects-arrows .slick-arrow.slick-prev {
       transform: rotate(180deg); }
 
@@ -1603,6 +1611,8 @@ a {
         display: block;
         color: #111;
         margin-bottom: 1rem; }
+        #about-us .about-contacts .contacts a:hover, #about-us .about-contacts .contacts a:focus {
+          text-decoration: underline; }
   #about-us .form {
     position: relative;
     padding-bottom: 10rem; }
@@ -1636,14 +1646,18 @@ a {
       border-bottom: 1px solid #111;
       padding: 0.5rem 0; }
       #teachers .teachers-list .item button {
-        outline: none;
-        border: none;
+        position: relative;
         background-color: transparent;
         color: #0000FF;
         font: inherit; }
         #teachers .teachers-list .item button .social-list {
-          display: none;
-          margin-left: 1rem; }
+          position: absolute;
+          top: 0;
+          left: 100%;
+          padding-left: 1rem;
+          display: flex;
+          opacity: 0;
+          z-index: 2; }
           #teachers .teachers-list .item button .social-list a {
             display: block;
             margin-right: 1rem;
@@ -1653,11 +1667,11 @@ a {
           color: #949494;
           white-space: nowrap; }
           #teachers .teachers-list .item button:hover .social-list, #teachers .teachers-list .item button:focus .social-list {
-            display: flex; }
+            opacity: 1; }
       #teachers .teachers-list .item .item-title {
         text-align: right; }
-        #teachers .teachers-list .item .item-title.button-hover {
-          opacity: 0; }
+    #teachers .teachers-list ul:hover + .item-title {
+      opacity: 0; }
     #teachers .teachers-list .item:not(:first-child) {
       min-height: 10rem; }
 

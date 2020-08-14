@@ -15,6 +15,8 @@ var itemsQuestion = questions.querySelectorAll('.item');
 var buttonClickHandler = function( button, block, show, active){
     button.addEventListener('click', function(){
         block.classList.toggle(show);
+        //var wrap = $(block).find('.item-desc-wrapper');
+        //wrap.length? wrap.slideToggle() : $(block).slideToggle();
         button.classList.toggle(active);
     })
 }
@@ -51,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
          imageWrapper.addEventListener("mousemove", function (evt) {
             rect = imageWrapper.getBoundingClientRect();
             mouseMove = true;
-            //linkFormRect = linkForm.getBoundingClientRect();
 
              X = evt.clientX - linkFormRect.width/2;
              Y = evt.clientY - rect.top - linkFormRect.height/2;
