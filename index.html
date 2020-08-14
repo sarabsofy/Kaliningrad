@@ -9,21 +9,21 @@
 <body>
   <div class="wrapper dis-flex">
     <nav id="nav" class="col-lg-2">
-      <ul>
+      <ul class="item-title">
         <li>
-          <a href="#">Направления обучения</a>
+          <a href="#section-route">Направления обучения</a>
         </li>
         <li>
-          <a href="#">Как устроена школа</a>
+          <a href="#about-us">Как устроена школа</a>
         </li>
         <li>
-          <a href="#">Преподаватели</a>
+          <a href="#teachers">Преподаватели</a>
         </li>
         <li>
-          <a href="#">События</a>
+          <a href="#fest">События</a>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <a href="#footer">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -33,9 +33,20 @@
         <div class="parent col-lg-4 text-block">
           <a href="#">Государственный проект института сценических искусств РГИСИ</a>
         </div>
-        <div class="contacts col-lg-1 text-block">
-          <ul>
-            <li><a href="#">Контакты</a></li>
+        <div class="contacts col-lg-2 text-block">
+          <button type="button" class="contacts-button">Контакты</button>
+          <ul class="contacts-list">
+            <li class="item">
+              <a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%90%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+4,+%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4,+%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+236029/@54.7287435,20.5106071,17z/data=!3m1!4b1!4m5!3m4!1s0x46e315f955ca50fd:0xab6bdc55a1e4996b!8m2!3d54.7287404!4d20.5127958" class="contacts-address">
+                Калининград <br> ул. Азовская д.4
+              </a>
+            </li>
+            <li class="item">
+              <a href="mailto:schoolkt@gmail.com">schoolkt@gmail.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+79992606070">8-999-260-60-70</a>
+            </li>
           </ul>
         </div>
         <div class="socials col-lg-2 text-block">
@@ -108,7 +119,14 @@
             <div class="col-lg-3">
               <div class="title item-title">Фото и видеопроизводство</div>
             </div>
-            <div class="item-desc col-lg-7 dis-grid grid-col-lg-2 text-block"></div>
+            <div class="item-desc col-lg-7 dis-grid grid-col-lg-2 text-block">
+                <p> Узнаем как работает современная индустрия анимации. Выясним отличия традиционного производства, рекламы, компьютерных игр и кино. Освоим современные технологии в анимации и создадим собственный проект.</p>
+                <ul>
+                  <li>2D - анимация</li>
+                  <li>3D - анимация</li>
+                  <li>Дизайн персонажа</li>
+                </ul>
+            </div>
             <div class="col-lg-2 relative">
               <img class="item-image" src="dist/images/marjanblan-JOyFnoS6vII-unsplash.png">
             </div>
@@ -117,7 +135,14 @@
             <div class="col-lg-3">
               <div class="title item-title">Звукорежиссура и электронная музыка</div>
             </div>
-            <div class="item-desc col-lg-7 dis-grid grid-col-lg-2 text-block"></div>
+            <div class="item-desc col-lg-7 dis-grid grid-col-lg-2 text-block">
+              <p> Узнаем как работает современная индустрия анимации. Выясним отличия традиционного производства, рекламы, компьютерных игр и кино. Освоим современные технологии в анимации и создадим собственный проект.</p>
+                <ul>
+                  <li>2D - анимация</li>
+                  <li>3D - анимация</li>
+                  <li>Дизайн персонажа</li>
+                </ul>
+            </div>
             <div class="col-lg-2 relative">
               <img class="item-image" src="dist/images/Asset 71 1.png">
             </div>
@@ -126,7 +151,14 @@
             <div class="col-lg-3">
               <div class="title item-title">Театр и театральные технологии</div>
             </div>
-            <div class="item-desc col-lg-7 dis-grid grid-col-lg-2 text-block"></div>
+            <div class="item-desc col-lg-7 dis-grid grid-col-lg-2 text-block">
+              <p> Узнаем как работает современная индустрия анимации. Выясним отличия традиционного производства, рекламы, компьютерных игр и кино. Освоим современные технологии в анимации и создадим собственный проект.</p>
+                <ul>
+                  <li>2D - анимация</li>
+                  <li>3D - анимация</li>
+                  <li>Дизайн персонажа</li>
+                </ul>
+            </div>
             <div class="col-lg-2 relative">
               <img class="item-image" src="dist/images/da3e18253d9876e3b797be35ac56ec52 1.png">
             </div>
@@ -149,9 +181,9 @@
         <div class="section-title type-2 col-lg-5">
           <h2>посмотрите проекты наших учеников</h2>
         </div>
-        <ul class="list dis-grid grid-col-lg-6">
+        <ul class="list section-projects-slider">
           <li class="item">
-            <a href="#">
+            <a data-fancybox="projects" href="dist/images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.png">
               <div class="item-image">
                 <img src="dist/images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.png">
               </div>
@@ -162,7 +194,29 @@
             </a>
           </li>
           <li class="item">
-            <a href="#">
+            <a data-fancybox="projects" href="dist/images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.png">
+              <div class="item-image">
+                <img src="dist/images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.png">
+              </div>
+              <div class="item-desc text-block">
+                <p class="item-route">3d-анимация</p>
+                <p class="item-name">Захаров Сергей, 16 лет</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a data-fancybox="projects" href="dist/images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.png">
+              <div class="item-image">
+                <img src="dist/images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.png">
+              </div>
+              <div class="item-desc text-block">
+                <p class="item-route">3d-анимация</p>
+                <p class="item-name">Захаров Сергей, 16 лет</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a data-fancybox="projects" href="dist/images/nicola-powys-oz7w_okbI0Q-unsplash.png">
               <div class="item-image">
                 <img src="dist/images/nicola-powys-oz7w_okbI0Q-unsplash.png">
               </div>
@@ -173,7 +227,7 @@
             </a>
           </li>
           <li class="item">
-            <a href="#">
+            <a data-fancybox="projects" href="dist/images/nick-reynolds-BqBzziWQ1Ws-unsplash.png">
               <div class="item-image">
                 <img src="dist/images/nick-reynolds-BqBzziWQ1Ws-unsplash.png">
               </div>
@@ -184,7 +238,7 @@
             </a>
           </li>
           <li class="item">
-            <a href="#">
+            <a data-fancybox="projects" href="dist/images/zhifei-zhou-gRbbGeA3Z4o-unsplash.png">
               <div class="item-image">
                 <img src="dist/images/zhifei-zhou-gRbbGeA3Z4o-unsplash.png">
               </div>
@@ -195,7 +249,7 @@
             </a>
           </li>
           <li class="item">
-            <a href="#">
+            <a data-fancybox="projects" href="dist/images/mr-tt-xb0wLfZH9Zo-unsplash 1.png">
               <div class="item-image">
                 <img src="dist/images/mr-tt-xb0wLfZH9Zo-unsplash 1.png">
               </div>
@@ -206,7 +260,7 @@
             </a>
           </li>
           <li class="item">
-            <a href="#">
+            <a data-fancybox="projects" href="dist/images/marjanblan-JOyFnoS6vI-unsplash.png">
               <div class="item-image">
                 <img src="dist/images/marjanblan-JOyFnoS6vI-unsplash.png">
               </div>
@@ -217,6 +271,7 @@
             </a>
           </li>
         </ul>
+        <div class="section-projects-arrows"></div>
       </section>
       <!-- end section projects block -->
 
@@ -249,7 +304,7 @@
                     И всё время практика — работа над личными и командными проектами.</p>
                 </div>
               </div>
-              <button class="item-button  item-button--active" type="button"></button>
+              <button class="item-button" type="button"></button>
             </li>
             <li class="item dis-flex justify-content-between">
               <div class="item-wrapper">
@@ -261,7 +316,7 @@
                   <p>Есть утренние и вечерние группы — легко совмещать с основной школой.</p>
                 </div>
               </div>
-              <button class="item-button  item-button--active" type="button"></button>
+              <button class="item-button" type="button"></button>
             </li>
             <li class="item dis-flex justify-content-between">
               <div class="item-wrapper">
@@ -273,7 +328,7 @@
                     Поэтому в нашей школе нет вступительных экзаменов — нужно просто заполнить анкету</p>
                 </div>
               </div>
-              <button class="item-button  item-button--active" type="button"></button>
+              <button class="item-button" type="button"></button>
             </li>
             <li class="item dis-flex justify-content-between">
               <div class="item-wrapper">
@@ -339,10 +394,11 @@
         <div class="form">
           <div class="image-wrapper">
             <img src="dist/images/Снимок экрана 2020-07-31 в 14.19.png">
+            <a href="#"  class="section-title type-2 link-form">
+              <p>заполнить анкету на поступление</p>
+            </a>
           </div>
-          <a href="#"  class="section-title type-2">
-            <p>заполнить анкету на поступление</p>
-          </a>
+          
         </div>
       </section>
       <!-- end section about block -->
@@ -584,23 +640,35 @@
                     своими знаниями и опытом на открытых лекциях. Среди них будут известные музыканты, режиссёры, аниматоры и художники.</p>
                 </div>
               </div>
-              <button class="item-button item-button--active" type="button"></button>
+              <button class="item-button" type="button"></button>
             </li>
             <li class="item dis-flex justify-content-between">
               <div class="item-desc">
                 <h3 class="item-title">как до вас удобнее добраться?</h3>
+                <div class="description text-block">
+                  <p>В течение трёх дней с пятницы по воскресенье наши педагоги и кураторы будут проводить бесплатные мастер-классы. Эксперты креативной и it-индустрий поделятся 
+                    своими знаниями и опытом на открытых лекциях. Среди них будут известные музыканты, режиссёры, аниматоры и художники.</p>
+                </div>
               </div>
               <button class="item-button" type="button"></button>
             </li>
             <li class="item dis-flex justify-content-between">
               <div class="item-desc">
                 <h3 class="item-title">сколько по времени идет занятие?</h3>
+                <div class="description text-block">
+                  <p>В течение трёх дней с пятницы по воскресенье наши педагоги и кураторы будут проводить бесплатные мастер-классы. Эксперты креативной и it-индустрий поделятся 
+                    своими знаниями и опытом на открытых лекциях. Среди них будут известные музыканты, режиссёры, аниматоры и художники.</p>
+                </div>
               </div>
               <button class="item-button" type="button"></button>
             </li>
             <li class="item dis-flex justify-content-between">
               <div class="item-desc">
                 <h3 class="item-title">есть ли онлайн курсы?</h3>
+                <div class="description text-block">
+                  <p>В течение трёх дней с пятницы по воскресенье наши педагоги и кураторы будут проводить бесплатные мастер-классы. Эксперты креативной и it-индустрий поделятся 
+                    своими знаниями и опытом на открытых лекциях. Среди них будут известные музыканты, режиссёры, аниматоры и художники.</p>
+                </div>
               </div>
               <button class="item-button" type="button"></button>
             </li>
@@ -644,7 +712,7 @@
           </div>
         </div>
         <div class="partners">
-          <ul class="dis-flex flex-wrap-wrap">
+          <ul class="dis-flex col-lg-7">
             <li>
               <a href="#"><img src="dist/images/minсult.png"></a>
             </li>
@@ -659,5 +727,7 @@
       </footer>
     </main>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="dist/js/production.min.js"></script>
 </body>
 </html>

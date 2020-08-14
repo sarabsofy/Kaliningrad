@@ -7,7 +7,6 @@
 
 #section-hello {
   position: relative;
-  padding-top: 6rem;
   font-size: 2rem;
   line-height: 2.5rem;
 
@@ -34,7 +33,12 @@
       .arrow{
         position: absolute;
         top: 0.75rem;
-        right: 0;
+        right: 1rem;
+      }
+
+      &:hover,
+      &:focus{
+
       }
     }
 
@@ -73,14 +77,22 @@
       padding-right:2rem;
     }
     .item-desc{
-  
-      p{
+      
+      p{ 
+        display:none;
         padding-right: 3.75rem;
         padding-bottom: 2rem;
       }
 
       ul{
         list-style: disc;
+        display: none;
+      }
+
+      &.desc-show{
+        p, ul{
+          display: block;
+        }
       }
     }
     .item-image{
@@ -100,9 +112,12 @@
 
   .list{
     grid-gap: 0.63rem;
+    width: calc(100% - 0.32rem);
+    margin-left: -0.32rem;
     padding-top:2.5rem;
 
     .item{
+      padding: 0 0.32rem;
       .item-image{
         margin-bottom:0.5rem;
 
@@ -118,6 +133,22 @@
   
       p{
         padding-top:0.5rem;
+      }
+    }
+  }
+
+  .section-projects-arrows{
+    .slick-arrow{
+      font-size: 0.00001rem;
+      color: transparent;
+      width: 2rem;
+      height: 2rem;
+      background: url('../images/Arrow 4.png') 0 50%;
+      background-repeat: no-repeat;
+      margin: 2rem;
+
+      &.slick-prev{
+        transform: rotate(180deg);
       }
     }
   }
@@ -143,7 +174,12 @@
       }
 
       .item-desc{
+        display: none;
         padding-top:0.33rem;
+
+        &.desc-show{
+          display: block;
+        }
       }
 
       .item-button{
@@ -175,8 +211,17 @@
           height: 1rem;
           transition: 0.2s ease-out;
         }
+      }
 
-        &--active::after{
+      &:hover,
+      &:focus{
+        .item-button{
+          transform: scale(1.2);
+        }
+      }
+
+      &.button-active{
+        .item-button::after{
           transform: translate(-50%, -50%) rotate(90deg);
         }
       }
@@ -213,17 +258,19 @@
     .image-wrapper{
       width: calc(100% + 20.5rem);
       transform: translateX(-20.5rem);
-
+      overflow: hidden;
       img{
         object-fit: cover;
       }
     }
 
     a{
+      white-space: nowrap;
       color: $white;
       position: absolute;
-      top: 20.5rem;
-      left: 5rem;
+      left: 0; top: 0;
+      transform: translate(20.5rem, 4rem);
+      padding: 2rem;
     }
   }
 }
@@ -320,6 +367,11 @@
       .item-desc{
         .description{
           padding-top: 2rem;
+          display:none;
+
+          &.desc-show{
+            display: block;
+          }
         }
       }
 
@@ -353,8 +405,17 @@
           height: 1.6rem;
           transition: 0.2s ease-out;
         }
+      }
 
-        &--active::after{
+      &:hover,
+      &:focus{
+        .item-button{
+          transform: scale(1.2);
+        }
+      }
+
+      &.button-active{
+        .item-button::after{
           transform: translate(-50%, -50%) rotate(90deg);
         }
       }

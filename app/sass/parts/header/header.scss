@@ -3,6 +3,7 @@
 .header {
   position: relative;
   padding-top: 1rem;
+  min-height:10rem;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -15,31 +16,65 @@
 
   .contacts {
     padding-left: 1rem;
-    ul {
-		  li {
-        border-bottom: 2px solid $black;
-        &:first-child {
-          position:relative;
 
-          &::before{
-            position: absolute;
-            content:"";
-            width: 0.4rem;
-            height: 0.4rem;
-            top: 0;
-            right:2px;
-            border: 2px solid $black;
-            transform: rotate(45deg);
-            border-left-color:transparent;
-            border-top-color:transparent;
+    button{
+      display: block;
+      border-bottom: 2px solid $black;
+      position: relative;
+      font: inherit;
+      width: 8rem;
+      text-align: left;
+      background-color: transparent;
+
+      &::before{
+        position: absolute;
+        content:"";
+        width: 0.4rem;
+        height: 0.4rem;
+        top: 0;
+        right:2px;
+        border: 2px solid $black;
+        transform: rotate(45deg);
+        border-left-color:transparent;
+        border-top-color:transparent;
+      }
+
+      &.button-active{
+        &::before{
+          transform: translateY(0.45rem)  rotate(-135deg);
+        }
+      }
+    }
+
+    .contacts-list{
+      display: none;
+      padding-top: 1rem;
+
+      .item{
+        padding-bottom: 0.5rem;
+
+        a{
+          &:hover {
+            text-decoration: underline;
+            white-space: nowrap;
           }
         }
-		  }
-	  }
+      }
+
+      &.contacts-show{
+        display: block;
+      }
+    }
   }
 
   .socials{
-    margin-left: 7rem;
+
+    a{
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
 
   .logo{

@@ -1,8 +1,8 @@
 @import '../_vars';
 
 #footer {
-    padding: 3.2rem 8rem 2rem 0;
-    background: url("../images/DSC08484.png") 100% 70% no-repeat;
+    padding: 3.2rem 8rem 3.2rem 0;
+    background: url("../images/DSC08484.png") 100% 75% no-repeat;
     background-size: 107%;
 
 	.contacts{
@@ -28,6 +28,11 @@
 
             a {
                 color: $black;
+                display: block;
+                &:hover,
+                &:focus{
+                    text-decoration: underline;
+                }
               }
           }
     }

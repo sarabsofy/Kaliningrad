@@ -2,7 +2,12 @@
 
 #nav {
   padding-top: 1rem;
+
   ul {
+    position: sticky;
+    top: 1rem;
+    left:0;
+    z-index: 2;
       li {
           a {
             display: block;
@@ -11,7 +16,13 @@
             line-height: 1.8rem;
             color: #999999;
             padding-right: 4rem;
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+              text-decoration: underline;
+            }
           }
       }
   }
