@@ -9,6 +9,11 @@
     left:0;
     z-index: 2;
       li {
+        &.current {
+          a {
+            color: $black;
+          }
+        }
           a {
             display: block;
             text-transform: lowercase;
@@ -19,9 +24,8 @@
             padding-bottom: 1.5rem;
 
             &:hover,
-            &:focus,
             &:active {
-              text-decoration: underline;
+              color: $black;
             }
           }
       }

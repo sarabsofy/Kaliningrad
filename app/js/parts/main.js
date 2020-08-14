@@ -15,8 +15,6 @@ var itemsQuestion = questions.querySelectorAll('.item');
 var buttonClickHandler = function( button, block, show, active){
     button.addEventListener('click', function(){
         block.classList.toggle(show);
-        //var wrap = $(block).find('.item-desc-wrapper');
-        //wrap.length? wrap.slideToggle() : $(block).slideToggle();
         button.classList.toggle(active);
     })
 }
@@ -97,14 +95,33 @@ $('.section-projects-slider').slick({
 
 //scroll
 
-$(document).ready(function(){
-  $("#nav").on("click","a", function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-    top = $(id).offset().top;
+// $(document).ready(function(){
+//   $("#nav").on("click","a", function (event) {
+//     event.preventDefault();
+//     var id  = $(this).attr('href'),
+//     top = $(id).offset().top;
 
-    $('body,html').animate({scrollTop: top}, 1500);
+//     $('body,html').animate({scrollTop: top}, 1500);
 
-  });
+//   });
+// });
+
+// page nav 
+
+$('#nav ul').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+	filter: '',
+	easing: 'swing',
+	begin: function() {
+		//I get fired when the animation is starting
+	},
+	end: function() {
+		//I get fired when the animation is ending
+	},
+	scrollChange: function($currentListItem) {
+		//I get fired when you enter a section and I pass the list item of the section
+	}
 });
-    

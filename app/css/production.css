@@ -1217,36 +1217,6 @@ li.fancybox-thumbs-loading {
 .slick-arrow.slick-hidden {
   display: none; }
 
-#footer {
-  padding: 3.2rem 8rem 3.2rem 0;
-  background: url("../images/DSC08484.png") 100% 75% no-repeat;
-  background-size: 107%; }
-  #footer .contacts {
-    padding-top: 8.25rem; }
-    #footer .contacts .button {
-      position: relative;
-      width: 100%;
-      text-transform: lowercase;
-      border-bottom: 3px solid #111;
-      padding: 5px 0; }
-      #footer .contacts .button .arrow {
-        position: absolute;
-        top: 0.75rem;
-        right: 1rem;
-        transition: 0.2s ease-out; }
-      #footer .contacts .button:hover .arrow, #footer .contacts .button:focus .arrow {
-        transform: translateX(0.8rem); }
-    #footer .contacts .contacts-list .item {
-      padding-bottom: 1.25rem; }
-    #footer .contacts .contacts-list a {
-      color: #111;
-      display: block; }
-      #footer .contacts .contacts-list a:hover, #footer .contacts .contacts-list a:focus {
-        text-decoration: underline; }
-  #footer .partners {
-    padding-top: 3.25rem;
-    transform: translateX(-21.5rem); }
-
 .header {
   position: relative;
   padding-top: 1rem;
@@ -1307,6 +1277,8 @@ li.fancybox-thumbs-loading {
     top: 1rem;
     left: 0;
     z-index: 2; }
+    #nav ul li.current a {
+      color: #111; }
     #nav ul li a {
       display: block;
       text-transform: lowercase;
@@ -1315,8 +1287,8 @@ li.fancybox-thumbs-loading {
       color: #999999;
       padding-right: 4rem;
       padding-bottom: 1.5rem; }
-      #nav ul li a:hover, #nav ul li a:focus, #nav ul li a:active {
-        text-decoration: underline; }
+      #nav ul li a:hover, #nav ul li a:active {
+        color: #111; }
 
 * {
   border: 0;
@@ -1447,6 +1419,36 @@ a {
   border-color: #fafafa; }
   .black-block a, .black-block p {
     color: #fafafa; }
+
+#footer {
+  padding: 3.2rem 8rem 3.2rem 0;
+  background: url("../images/DSC08484.png") 100% 75% no-repeat;
+  background-size: 107%; }
+  #footer .contacts {
+    padding-top: 8.25rem; }
+    #footer .contacts .button {
+      position: relative;
+      width: 100%;
+      text-transform: lowercase;
+      border-bottom: 3px solid #111;
+      padding: 5px 0; }
+      #footer .contacts .button .arrow {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        transition: 0.2s ease-out; }
+      #footer .contacts .button:hover .arrow, #footer .contacts .button:focus .arrow {
+        transform: translateX(0.8rem); }
+    #footer .contacts .contacts-list .item {
+      padding-bottom: 1.25rem; }
+    #footer .contacts .contacts-list a {
+      color: #111;
+      display: block; }
+      #footer .contacts .contacts-list a:hover, #footer .contacts .contacts-list a:focus {
+        text-decoration: underline; }
+  #footer .partners {
+    padding-top: 3.25rem;
+    transform: translateX(-21.5rem); }
 
 #main {
   background: url("../images/image 1.png") 60% 0 no-repeat;
@@ -1939,182 +1941,4 @@ a {
   html {
     font-size: 16px; }
   body {
-    overflow-x: hidden; }
-  #header {
-    z-index: 999; }
-    #header #nav {
-      width: 100vw;
-      padding: 0 0.5rem; }
-      #header #nav ul {
-        justify-content: space-between; }
-        #header #nav ul li:not(:last-child) {
-          margin-right: 0.5rem; }
-        #header #nav ul li a {
-          letter-spacing: .25rem; }
-  #page-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-    #page-bg video,
-    #page-bg img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-      object-fit: cover; }
-  #page-desc {
-    display: none; }
-  body.home {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden; }
-    body.home #page-content {
-      top: auto;
-      bottom: 0;
-      padding: .5rem;
-      font-size: 18px; }
-    body.home #page-desc {
-      padding: 0.5rem;
-      text-align: center;
-      font-size: 13px;
-      letter-spacing: .35rem;
-      font-weight: bold; }
-      body.home #page-desc-dop {
-        margin-top: 0.3rem;
-        display: block;
-        line-height: 12px; }
-    body.home #footer {
-      display: none; }
-  .category-portfolio .page-content,
-  .category-education .page-content,
-  .post-template-post-education .page-content {
-    padding: 0 .5rem; }
-  .category-portfolio #page-content,
-  .category-education #page-content,
-  .post-template-post-education #page-content {
-    padding: 3rem 0.5rem 0.5rem 0.5rem;
-    margin-top: 0 !important;
-    color: #fafafa; }
-  .category-portfolio #page-bg,
-  .category-education #page-bg,
-  .post-template-post-education #page-bg {
-    height: 100%;
-    overflow: hidden; }
-    .category-portfolio #page-bg img,
-    .category-education #page-bg img,
-    .post-template-post-education #page-bg img {
-      height: 130vh; }
-  .category-portfolio #footer,
-  .category-education #footer,
-  .post-template-post-education #footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px; }
-    .category-portfolio #footer a:not(:last-child),
-    .category-education #footer a:not(:last-child),
-    .post-template-post-education #footer a:not(:last-child) {
-      margin-bottom: 0.4rem; }
-  #page-portfolio {
-    padding-bottom: 100px; }
-    #page-portfolio .portfolio-filter {
-      display: none; }
-    #page-portfolio .post {
-      margin-bottom: 57px;
-      font-size: 18px; }
-      #page-portfolio .post .client,
-      #page-portfolio .post .year {
-        color: #666; }
-      #page-portfolio .post .video-poster {
-        position: relative;
-        overflow: hidden; }
-        #page-portfolio .post .video-poster::after {
-          content: '';
-          display: block;
-          padding-top: 55%; }
-        #page-portfolio .post .video-poster img {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          -o-object-fit: cover;
-          object-fit: cover; }
-  #page-education {
-    margin-top: 3rem; }
-    #page-education .main-post {
-      position: static;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding-top: 30px;
-      padding-bottom: 100px; }
-      #page-education .main-post .top {
-        flex-wrap: wrap; }
-        #page-education .main-post .top .client {
-          width: 100%;
-          display: flex;
-          justify-content: space-between; }
-        #page-education .main-post .top .type {
-          padding: 10px 0; }
-      #page-education .main-post .bottom {
-        order: -1; }
-        #page-education .main-post .bottom .title {
-          justify-content: center;
-          font-size: 8.3vw; }
-          #page-education .main-post .bottom .title span {
-            margin-right: 10px; }
-    #page-education .posts {
-      padding-bottom: 80px; }
-      #page-education .posts .post a {
-        background-color: rgba(17, 17, 17, 0.2); }
-      #page-education .posts .post .bottom {
-        flex-wrap: wrap; }
-        #page-education .posts .post .bottom .client {
-          display: flex;
-          justify-content: space-between;
-          width: 100%; }
-        #page-education .posts .post .bottom .type {
-          padding: 10px 0; }
-      #page-education .posts .post:after {
-        transform: translateY(calc(18px - 100%)); }
-  #post-edd {
-    margin-top: 0;
-    padding-top: 4rem; }
-    #post-edd .main-post {
-      display: flex;
-      flex-direction: column; }
-      #post-edd .main-post .bottom {
-        order: -1;
-        margin-bottom: 1rem; }
-        #post-edd .main-post .bottom .title {
-          font-size: 8.3vw;
-          justify-content: center; }
-      #post-edd .main-post .top {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        font-size: 18px;
-        opacity: 0.5; }
-        #post-edd .main-post .top .type,
-        #post-edd .main-post .top .price {
-          display: none; }
-      #post-edd .main-post .buy {
-        width: 100%;
-        padding-top: 70px; }
-        #post-edd .main-post .buy .button {
-          width: 100%;
-          text-align: center;
-          margin-bottom: 4px;
-          font-size: 27px; }
-      #post-edd .main-post .course-type {
-        text-align: center;
-        text-transform: uppercase;
-        opacity: 0.5;
-        font-size: 18px; } }
+    overflow-x: hidden; } }
