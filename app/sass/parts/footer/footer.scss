@@ -11,14 +11,15 @@
             position: relative;
             width: 100%;
             text-transform: lowercase;
-            border-bottom: 3px solid $black;
-            padding: 5px 0;
+            border-bottom: 0.19rem solid $black;
+            padding: 0.31rem 0;
       
             .arrow{
               position: absolute;
               top: 0.75rem;
               right: 1rem;
               transition: 0.2s ease-out;
+              width: 2rem;
             }
 
             &:hover,

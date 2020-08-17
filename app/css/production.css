@@ -1217,6 +1217,40 @@ li.fancybox-thumbs-loading {
 .slick-arrow.slick-hidden {
   display: none; }
 
+#footer {
+  padding: 3.2rem 8rem 3.2rem 0;
+  background: url("../images/DSC08484.png") 100% 75% no-repeat;
+  background-size: 107%; }
+  #footer .contacts {
+    padding-top: 8.25rem; }
+    #footer .contacts .button {
+      position: relative;
+      width: 100%;
+      text-transform: lowercase;
+      border-bottom: 0.19rem solid #111;
+      padding: 0.31rem 0; }
+      #footer .contacts .button .arrow {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        transition: 0.2s ease-out;
+        width: 2rem; }
+      #footer .contacts .button:hover .arrow, #footer .contacts .button:focus .arrow {
+        transform: translateX(0.8rem); }
+    #footer .contacts .contacts-list .item {
+      padding-bottom: 1.25rem; }
+    #footer .contacts .contacts-list a {
+      color: #111;
+      display: block; }
+      #footer .contacts .contacts-list a:hover, #footer .contacts .contacts-list a:focus {
+        text-decoration: underline; }
+  #footer .partners {
+    padding-top: 3.25rem;
+    transform: translateX(-21.5rem); }
+
+.header-mobile {
+  display: none; }
+
 .header {
   position: relative;
   padding-top: 1rem;
@@ -1232,7 +1266,7 @@ li.fancybox-thumbs-loading {
     padding-left: 1rem; }
     .header .contacts button {
       display: block;
-      border-bottom: 2px solid #111;
+      border-bottom: 0.125rem solid #111;
       position: relative;
       font: inherit;
       width: 8rem;
@@ -1245,7 +1279,7 @@ li.fancybox-thumbs-loading {
         height: 0.4rem;
         top: 0;
         right: 2px;
-        border: 2px solid #111;
+        border: 0.125rem solid #111;
         transform: rotate(45deg);
         border-left-color: transparent;
         border-top-color: transparent; }
@@ -1287,7 +1321,7 @@ li.fancybox-thumbs-loading {
       color: #999999;
       padding-right: 4rem;
       padding-bottom: 1.5rem; }
-      #nav ul li a:hover, #nav ul li a:active {
+      #nav ul li a:hover {
         color: #111; }
 
 * {
@@ -1363,12 +1397,12 @@ input, textarea {
   padding: 0 1rem; }
 
 .section-border {
-  border-bottom: 1px solid #111; }
+  border-bottom: 0.06rem solid #111; }
   .section-border::before, .section-border::after {
     content: "";
     position: absolute;
     top: 100%;
-    height: 1px;
+    height: 0.06rem;
     background-color: #111; }
   .section-border::before {
     right: 100%;
@@ -1420,71 +1454,38 @@ a {
   .black-block a, .black-block p {
     color: #fafafa; }
 
-#footer {
-  padding: 3.2rem 8rem 3.2rem 0;
-  background: url("../images/DSC08484.png") 100% 75% no-repeat;
-  background-size: 107%; }
-  #footer .contacts {
-    padding-top: 8.25rem; }
-    #footer .contacts .button {
-      position: relative;
-      width: 100%;
-      text-transform: lowercase;
-      border-bottom: 3px solid #111;
-      padding: 5px 0; }
-      #footer .contacts .button .arrow {
-        position: absolute;
-        top: 0.75rem;
-        right: 1rem;
-        transition: 0.2s ease-out; }
-      #footer .contacts .button:hover .arrow, #footer .contacts .button:focus .arrow {
-        transform: translateX(0.8rem); }
-    #footer .contacts .contacts-list .item {
-      padding-bottom: 1.25rem; }
-    #footer .contacts .contacts-list a {
-      color: #111;
-      display: block; }
-      #footer .contacts .contacts-list a:hover, #footer .contacts .contacts-list a:focus {
-        text-decoration: underline; }
-  #footer .partners {
-    padding-top: 3.25rem;
-    transform: translateX(-21.5rem); }
-
 #main {
   background: url("../images/image 1.png") 60% 0 no-repeat;
   background-size: 80%; }
 
 #section-hello {
-  position: relative;
-  font-size: 2rem;
-  line-height: 2.5rem; }
+  position: relative; }
   #section-hello .title {
     padding-right: 20rem; }
     #section-hello .title p {
       margin-top: 3.75rem; }
   #section-hello .desc {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    padding-bottom: 7rem; }
+    padding-right: 6.5rem;
+    margin: 7rem 0 7rem 0;
+    background-color: #fafafa; }
     #section-hello .desc .button {
       position: relative;
       width: 100%;
       text-transform: lowercase;
-      margin-top: 7rem;
-      border-bottom: 3px solid #111;
-      padding: 5px 0; }
+      border-bottom: 0.19rem solid #111;
+      padding: 0.31rem 0; }
       #section-hello .desc .button .arrow {
         position: absolute;
         top: 0.75rem;
         right: 1rem;
-        transition: 0.2s ease-out; }
+        transition: 0.2s ease-out;
+        width: 2rem; }
       #section-hello .desc .button:hover .arrow, #section-hello .desc .button:focus .arrow {
         transform: translateX(0.8rem); }
     #section-hello .desc p {
       color: #A5A5A5;
       padding: 1rem 0; }
-  #section-hello .hello-image {
+  #section-hello .hello-image-wrapper {
     position: absolute;
     bottom: -4rem;
     right: -1rem;
@@ -1549,6 +1550,7 @@ a {
     background: url("../images/Arrow 4.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 2rem 1rem;
     padding: 2rem;
     cursor: pointer; }
     #section-projects .section-projects-arrows .slick-arrow.slick-prev {
@@ -1563,8 +1565,6 @@ a {
     border-top: 1px solid #DFDFDF;
     height: auto; }
     #about-us .about-list .item .item-title {
-      font-size: 2rem;
-      line-height: 2.5rem;
       text-transform: lowercase; }
     #about-us .about-list .item .item-desc {
       display: none;
@@ -1598,10 +1598,7 @@ a {
     #about-us .about-list .item.button-active .item-button::after {
       transform: translate(-50%, -50%) rotate(90deg); }
   #about-us .about-desc {
-    padding: 0.5rem 4rem 5rem 6.3rem;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif; }
+    padding: 0.5rem 4rem 5rem 6.3rem; }
   #about-us .about-contacts {
     padding-top: 13rem; }
     #about-us .about-contacts .contacts {
@@ -1862,9 +1859,7 @@ a {
     -ms-grid-columns: (6fr)[6];
     grid-template-columns: repeat(6, 6fr); }
   [class*=padding-] {
-    padding: 0; }
-  html {
-    font-size: 16px; } }
+    padding: 0; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   /* global */
@@ -1941,4 +1936,172 @@ a {
   html {
     font-size: 16px; }
   body {
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+  .wrapper {
+    display: block; }
+  .section-title.type-1 > * {
+    font-size: 2.25rem;
+    line-height: 2.25rem; }
+  .section-title.type-2 > * {
+    font-size: 1.8rem;
+    line-height: 2rem; }
+  .item-title {
+    font-size: 1.25rem;
+    line-height: 1.9rem; }
+    .item-title h3, .item-title a {
+      font-size: 1.25rem;
+      line-height: 1.9rem; }
+  .text-block p, .text-block a {
+    font-size: 0.8rem;
+    line-height: 1rem; }
+  #main {
+    background: none; }
+  #nav {
+    display: none;
+    position: fixed;
+    left: 0rem;
+    top: 3rem;
+    z-index: 3;
+    background-color: #fafafa;
+    padding: 2rem 0 3rem 1rem; }
+    #nav.show-nav {
+      display: block; }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000; }
+  .header {
+    display: none; }
+  .header-mobile {
+    display: flex;
+    padding: 1rem;
+    background-color: #fafafa;
+    width: calc(100% + 2rem);
+    transform: translateX(-1rem); }
+    .header-mobile button {
+      padding-left: 1rem;
+      background-color: transparent; }
+      .header-mobile button .line {
+        height: 0.125rem;
+        background-color: #111;
+        margin: auto 0; }
+      .header-mobile button::before, .header-mobile button::after {
+        position: absolute;
+        content: "";
+        width: calc(100% - 1rem);
+        height: 0.125rem;
+        right: 0;
+        background-color: #111;
+        transition: 0.2s ease-out; }
+      .header-mobile button::before {
+        top: 0.5rem; }
+      .header-mobile button::after {
+        top: calc(100% - 0.6rem); }
+      .header-mobile button.button-active .line {
+        display: none; }
+      .header-mobile button.button-active::before {
+        transform: translateY(0.5rem) rotate(45deg); }
+      .header-mobile button.button-active::after {
+        transform: translateY(-0.65rem) rotate(-45deg); }
+  #section-hello {
+    background: url("../images/IMG_1357 1.png") no-repeat;
+    background-size: 160%;
+    background-position: 10% 900%;
+    padding: 0.5rem 1rem 1rem 1rem;
+    width: calc(100% + 2rem);
+    transform: translateX(-1rem); }
+    #section-hello .title {
+      padding-right: 0; }
+      #section-hello .title p {
+        margin-top: 0.5rem; }
+    #section-hello .desc {
+      margin: 13rem 0 0 0;
+      padding: 0 0.5rem; }
+      #section-hello .desc .button {
+        padding-top: 1rem; }
+        #section-hello .desc .button .arrow {
+          top: 1.45rem; }
+      #section-hello .desc p {
+        padding-bottom: 0.5rem; }
+    #section-hello .hello-image-wrapper {
+      display: none; }
+  #section-route {
+    padding-top: 4rem; }
+    #section-route .desc {
+      padding-bottom: 3rem; }
+    #section-route .list .item {
+      flex-direction: column; }
+      #section-route .list .item .title {
+        padding-bottom: 1rem; }
+      #section-route .list .item .item-desc p {
+        padding-right: 0; }
+      #section-route .list .item .item-desc ul {
+        padding: 0 0 1rem 1rem; }
+      #section-route .list .item .item-image {
+        position: static;
+        height: auto; }
+  #section-projects {
+    padding: 5rem 0 3rem 0; }
+  #about-us .about-desc {
+    padding: 2rem 0 0 0; }
+  #about-us .about-contacts {
+    padding-top: 5rem; }
+    #about-us .about-contacts .contacts-desc {
+      padding-bottom: 3rem; }
+    #about-us .about-contacts .contacts {
+      padding: 0 0 1rem 0; }
+  #about-us .form {
+    padding-bottom: 5rem; }
+    #about-us .form a {
+      display: block;
+      white-space: normal;
+      top: 7rem;
+      left: 20.5rem;
+      padding: 0;
+      transform: none; }
+  #teachers .teachers-desc {
+    padding-right: 0; }
+    #teachers .teachers-desc .description {
+      padding: 2rem 0 3rem 0; }
+  #teachers .teachers-list {
+    padding-right: 0;
+    padding-top: 3rem; }
+    #teachers .teachers-list .item {
+      flex-direction: column-reverse;
+      align-items: flex-start; }
+      #teachers .teachers-list .item .item-title {
+        text-align: left;
+        padding-bottom: 1rem; }
+      #teachers .teachers-list .item button {
+        flex-direction: column; }
+        #teachers .teachers-list .item button .social-list {
+          position: static;
+          padding-left: 0;
+          padding-bottom: 0.5rem;
+          display: none; }
+        #teachers .teachers-list .item button:hover .social-list, #teachers .teachers-list .item button:focus .social-list {
+          display: flex; }
+      #teachers .teachers-list .item ul:hover + .item-title {
+        opacity: 1; }
+    #teachers .teachers-list .item:not(:first-child) {
+      min-height: 5rem; }
+  #fest {
+    padding: 0 0 7rem 0; }
+    #fest .poster-wrapper {
+      padding-right: 0;
+      margin-top: 4rem; }
+  #questions {
+    padding: 3rem 0 6rem 0; }
+  #footer {
+    padding-right: 0;
+    background: none; }
+    #footer .contacts {
+      padding-top: 3rem; }
+      #footer .contacts .contacts-list {
+        padding-top: 2rem; }
+      #footer .contacts .social {
+        padding-top: 2rem; }
+    #footer .partners {
+      transform: translateX(0); } }

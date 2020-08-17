@@ -1,7 +1,9 @@
 var header = document.querySelector(".header");
 var buttonContacts = header.querySelector(".contacts-button");
 var contactsList = header.querySelector(".contacts-list");
+var headerButton = document.querySelector('.header-button');
 
+var mainNav = document.getElementById('nav');
 var route = document.getElementById('section-route');
 var itemsRoute = route.querySelectorAll('.item');
 
@@ -32,6 +34,7 @@ itemClickHandler(itemsAbout, '.item-desc', 'desc-show', 'button-active');
 itemClickHandler(itemsQuestion, '.description', 'desc-show', 'button-active');
 
 buttonClickHandler( buttonContacts, contactsList, 'contacts-show', 'button-active');
+buttonClickHandler(headerButton, mainNav, 'show-nav', 'button-active');
 
 
 
@@ -89,22 +92,19 @@ document.addEventListener("DOMContentLoaded", function () {
 $('.section-projects-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 2,
-    appendArrows: '.section-projects-arrows'
+    appendArrows: '.section-projects-arrows',
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+       
+          }
+        }
+    ]
 });
 
-
-//scroll
-
-// $(document).ready(function(){
-//   $("#nav").on("click","a", function (event) {
-//     event.preventDefault();
-//     var id  = $(this).attr('href'),
-//     top = $(id).offset().top;
-
-//     $('body,html').animate({scrollTop: top}, 1500);
-
-//   });
-// });
 
 // page nav 
 

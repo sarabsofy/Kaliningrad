@@ -1,5 +1,9 @@
 @import '../_vars';
 
+.header-mobile{
+  display: none;
+}
+
 .header {
   position: relative;
   padding-top: 1rem;
@@ -19,7 +23,7 @@
 
     button{
       display: block;
-      border-bottom: 2px solid $black;
+      border-bottom: 0.125rem solid $black;
       position: relative;
       font: inherit;
       width: 8rem;
@@ -33,7 +37,7 @@
         height: 0.4rem;
         top: 0;
         right:2px;
-        border: 2px solid $black;
+        border: 0.125rem solid $black;
         transform: rotate(45deg);
         border-left-color:transparent;
         border-top-color:transparent;
